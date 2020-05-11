@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Montserrat:400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <title>netobservatory.by</title>
+</head>
+<body>
+    <div class="index-page">
+        <div class="main">
+            <header class="header">
+                <p class="header__logo">Беларусская обсерватория интернета </p>
+                <a href="#" class="m-menu-link">
+                    <span class="material-icons"> menu </span>
+                </a>
+                <nav >
+                    <ul class="m-menu">
+                        <li><i class="material-icons close-menu">close</i></li>
+                        <li><a class="nav-info" href="">О проекте</a></li>
+                        <li><a class="nav-news" href="">Новости</a></li>
+                        <li><a class="nav-how" href="">Как это работает</a></li>
+                        <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
+                    </ul>
+                </nav>
+                <nav class="desktop-menu">
+                    <ul>
+                        <li><a class="nav-info" href="">О проекте</a></li>
+                        <li><a class="nav-news" href="">Новости</a></li>
+                        <li><a class="nav-how" href="">Как это работает</a></li>
+                        <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
+                    </ul>
+                </nav>
+                <input type="button" value="Проверить сайт">
+            </header>
+            <div class="stat">
+    
+                <a href="#" class="stat__sites">
+                    <img src="img/svg/web-programming.svg" alt="">
+                    <div class="sites__about">
+                        <p>Заблокированные вебсайты</p>
+                        <span>всего</span>
+                        <span>11456</span>
+                        <span>+59</span>
+                    </div>
+                </a>
+    
+                <a href="#" class="stat__messengers">
+                    <img class="messengerIMG"src="img/svg/chat.svg" alt="">
+                    <div class="messengers__about">
+                        <p>Блокировка мессенджеров</p>
+                        <div>
+                            <img src="img/svg/teleg.svg" alt="">
+                            <img src="img/svg/whatsapp.svg" alt="">
+                            <img src="img/svg/fcmessenger.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+    
+                <a href ="#" class="stat__tor">
+                    <img src="img/svg/tor.svg" alt="">
+                    <div class="tor__about">
+                        <p>Блокировка TOR (выходные точки)</p>
+                        <span>всего</span>
+                        <span>11456</span>
+                        <span>+59</span>
+                    </div>
+                </a>
+            </div>
+            <img src="img/svg/mainBCKG.svg" alt="" class="bckgImage">
+            <div class="main__about">
+                <h1>Open Observatory of Network Interference in Belarus</h1>
+                <p>A free software, global observat ion network for detecting censorship, surveillance and traffic manipulation on the internet</p>
+                <a href="#">Смотреть отчет</a>
+            </div>
+        </div>
+        <div class="subscription">
+            <a href="#" class="subscription__close">Спасибо, уже подписан</a>
+            <span>Оставте свой мэйл, чтобы получать наш месячный ответ по блокировкам</span>
+            <form action="">
+                <input type="text">
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+        <div class="explain">
+            <img src="img/svg/explain.svg" alt="">
+            <div class="explain__about">
+                <h2>Как это работает</h2>
+                <p>OONI scans TCP, DNS, HTTP and TLS connections for tampering. Some tests work by requesting data over an unencrypted connection and comparing against a known good value. Others check for DNS spoofing, keyword filtering, transparent proxying and website block lists.</p>
+                <a href="#">Подробней</a>
+            </div>
+        </div>
+        <div class="example">
+            <p>Since <span>9/30/2015</span>, OONI Probe users in Belarus have collected <span>1,153,572 measurements from 53 local networks</span>.</p>
+        </div>
+        <div class="graphics">
+            <h2>Заблокированные в Беларуси вебсайты</h2>
+            <div class="graphic-block">
+                <div class="filter">
+                    <h4>Количество проверенных сайтов</h4>
+                    <form action="" class="place">
+                        <input type="button" value="беларуские">
+                        <input type="button" value="зарубежные">
+                        <input type="button" value="неизвестно">
+                    </form>
+                    <form action="" class="time">
+                        <input type="button" value="все время">
+                        <input type="button" value="за год">
+                        <input type="button" value="за месяц">
+                        <input type="button" value="за неделю">
+                    </form>
+                </div>
+                <div class="graphic"></div>
+            </div>
+    
+            <div class="graphic-block">
+                <div class="filter">
+                    <h4>Количество проверенных сайтов</h4>
+                    <form action="" class="place">
+                        <input type="button" value="беларуские">
+                        <input type="button" value="зарубежные">
+                        <input type="button" value="неизвестно">
+                    </form>
+                    <form action="" class="time">
+                        <input type="button" value="все время">
+                        <input type="button" value="за год">
+                        <input type="button" value="за месяц">
+                        <input type="button" value="за неделю">
+                    </form>
+                </div>
+                <div class="graphic"></div>
+            </div>
+    
+            <div class="graphic-block">
+                <div class="filter">
+                    <h4>Количество проверенных сайтов</h4>
+                    <form action="" class="place">
+                        <input type="button" value="беларуские">
+                        <input type="button" value="зарубежные">
+                        <input type="button" value="неизвестно">
+                    </form>
+                    <form action="" class="time">
+                        <input type="button" value="все время">
+                        <input type="button" value="за год">
+                        <input type="button" value="за месяц">
+                        <input type="button" value="за неделю">
+                    </form>
+                </div>
+                <div class="graphic"></div>
+            </div>
+    
+            <div class="graphic-block">
+                <div class="filter">
+                    <h4>Количество проверенных сайтов</h4>
+                    <form action="" class="place">
+                        <input type="button" value="беларуские">
+                        <input type="button" value="зарубежные">
+                        <input type="button" value="неизвестно">
+                    </form>
+                    <form action="" class="time">
+                        <input type="button" value="все время">
+                        <input type="button" value="за год">
+                        <input type="button" value="за месяц">
+                        <input type="button" value="за неделю">
+                    </form>
+                </div>
+                <div class="graphic"></div>
+            </div>
+    
+            <div class="graphic-block">
+                <div class="filter">
+                    <h4>Количество проверенных сайтов</h4>
+                    <form action="" class="place">
+                        <input type="button" value="беларуские">
+                        <input type="button" value="зарубежные">
+                        <input type="button" value="неизвестно">
+                    </form>
+                    <form action="" class="time">
+                        <input type="button" value="все время">
+                        <input type="button" value="за год">
+                        <input type="button" value="за месяц">
+                        <input type="button" value="за неделю">
+                    </form>
+                </div>
+                <div class="graphic"></div>
+            </div>
+    
+    
+        <footer class="footer">
+            <h4 class="logo">Беларусская обсерватория интернета</h4>
+            <nav>
+                <ul>
+                    <li><a class="nav-info" href="">О проекте</a></li>
+                    <li><a class="nav-news" href="">Новости</a></li>
+                    <li><a class="nav-how" href="">Как это работает</a></li>
+                    <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <a href="#"><div class="socials-logo"></div></a>
+                <a href="#"><div class="socials-logo"></div></a>
+                <a href="#"><div class="socials-logo"></div></a>
+            </div>
+            <p class="register-data">Учреждение «Консультационный центр по актуальным международным практикам и их имплементации в праве „Хьюман Константа“» Зарегистрировано 12.10.2016, Минским горисполкомом. УНП 192719487. Юр. адрес: ул. Карастояновой 32, оф. 9Е, Минск, Беларусь 220068</p>
+        </footer>
+    </div>
+</body>
+</html> 
