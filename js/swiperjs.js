@@ -15,12 +15,16 @@ const slider = document.querySelector('.swiper-container');
         },
         960: {
             slidesPerView: 3,
-            spaceBetween:29
+            spaceBetween:23
           },
-        1500:{
-        slidesPerView: 4,
-        spaceBetween: 8
-        }
+        1440:{
+        slidesPerView: 3,
+        spaceBetween: 27
+        },
+        2560:{
+          slidesPerView: 4,
+          spaceBetween: 33
+          }
       }
 /*       effect: 'coverflow',
       grabCursor: true,
