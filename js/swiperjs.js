@@ -23,7 +23,7 @@ const slider = document.querySelector('.swiper-container');
         },
         2560:{
           slidesPerView: 4,
-          spaceBetween: 33
+          spaceBetween: 33,
           }
       }
 /*       effect: 'coverflow',

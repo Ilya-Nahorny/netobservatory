@@ -1346,7 +1346,7 @@ h1,h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #A3A8AB;
+        border-top: 1px solid #A3A8AB;
         border-image: url(../img/svg/borderLine.svg)37 repeat ;
 
         &__close{
@@ -1452,9 +1452,12 @@ h1,h2{
             .swiper-container{
                 width: 100%;
                 margin: 0 auto;
+                height: 580px;
+                padding-top:20px;
                 .swiper-wrapper{
                     .swiper-slide{
-                        border-right: 1px solid #F5F5F5;
+                        /* margin-right: 13px; */
+                        /* margin-left:27px; */
                         border: radius 4px;
                         height: 527px;
                         width: 429px;
@@ -1462,7 +1465,7 @@ h1,h2{
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items:center;
-
+                        box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
                         h4, p, span{
                             margin:0 1vw;
                             text-align: center;
@@ -2074,7 +2077,6 @@ h1,h2{
             flex-wrap: wrap;
             justify-content: space-evenly;
             .card{
-                border-right: 1px solid #F5F5F5;
                 border: radius 4px;
                 height: 527px;
                 display: flex;
@@ -2084,6 +2086,7 @@ h1,h2{
                 min-width: 300px;
                 max-width: 430px;
                 margin:2vw;
+                box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
                 h4, p, span{
                     margin:0 1vw;
                     text-align: center;
@@ -2154,7 +2157,7 @@ h1,h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #A3A8AB;
+        border-top: 1px solid #A3A8AB;
         border-image: url(../img/svg/borderLine.svg)37 repeat ;
 
         &__close{
@@ -2803,9 +2806,12 @@ h1,h2{
             .swiper-container{
                 width: 100%;
                 margin: 0 auto;
+                height: 580px;
+                padding-top:20px;
                 .swiper-wrapper{
                     .swiper-slide{
-                        border-right: 1px solid #F5F5F5;
+                        /* margin-right: 13px; */
+                        /* margin-left:27px; */
                         border: radius 4px;
                         height: 527px;
                         width: 429px;
@@ -2813,7 +2819,7 @@ h1,h2{
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items:center;
-
+                        box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
                         h4, p, span{
                             margin:0 1vw;
                             text-align: center;
@@ -2911,7 +2917,7 @@ h1,h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #A3A8AB;
+        border-top: 1px solid #A3A8AB;
         border-image: url(../img/svg/borderLine.svg)37 repeat ;
 
         &__close{
