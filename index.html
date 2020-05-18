@@ -9,37 +9,37 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <script src="js/burger-menu.js"></script>
+    <script src="js/main.js"></script>
     <title>netobservatory.by</title>
 </head>
 <body>
     <div class="index-page">
+        <header class="header">
+            <p class="header__logo">Беларусская обсерватория интернета </p>
+            <a href="#" class="m-menu-link">
+                <span class="material-icons"> menu </span>
+            </a>
+            <nav >
+                <ul class="m-menu">
+                    <li><i class="material-icons close-menu">close</i></li>
+                    <li><a class="nav-info" href="about.html">О проекте</a></li>
+                    <li><a class="nav-news" href="news.html">Новости</a></li>
+                    <li><a class="nav-how mobileBtn" href="#explain">Как это работает</a></li>
+                    <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a class="nav-info" href="about.html">О проекте</a></li>
+                    <li><a class="nav-news" href="news.html">Новости</a></li>
+                    <li><a class="nav-how" href="#explain">Как это работает</a></li>
+                    <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
+                </ul>
+            </nav>
+            <input type="button" value="Проверить сайт" class="check-the-page">
+        </header>
         <div class="main">
-            <header class="header">
-                <p class="header__logo">Беларусская обсерватория интернета </p>
-                <a href="#" class="m-menu-link">
-                    <span class="material-icons"> menu </span>
-                </a>
-                <nav >
-                    <ul class="m-menu">
-                        <li><i class="material-icons close-menu">close</i></li>
-                        <li><a class="nav-info" href="">О проекте</a></li>
-                        <li><a class="nav-news" href="">Новости</a></li>
-                        <li><a class="nav-how" href="">Как это работает</a></li>
-                        <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
-                    </ul>
-                </nav>
-                <nav class="desktop-menu">
-                    <ul>
-                        <li><a class="nav-info" href="">О проекте</a></li>
-                        <li><a class="nav-news" href="">Новости</a></li>
-                        <li><a class="nav-how" href="">Как это работает</a></li>
-                        <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
-                    </ul>
-                </nav>
-                <input type="button" value="Проверить сайт">
-            </header>
             <div class="stat">
-    
                 <a href="#" class="stat__sites">
                     <img src="img/svg/web-programming.svg" alt="">
                     <div class="sites__about">
@@ -72,7 +72,7 @@
                     </div>
                 </a>
             </div>
-            <img src="img/svg/mainBCKG.svg" alt="" class="bckgImage">
+            <div class="bckgImage"></div>
             <div class="main__about">
                 <h1>Open Observatory of Network Interference in Belarus</h1>
                 <p>A free software, global observat ion network for detecting censorship, surveillance and traffic manipulation on the internet</p>
@@ -87,7 +87,7 @@
                 <button type="submit">Подписаться</button>
             </form>
         </div>
-        <div class="explain">
+        <div class="explain" id="explain">
             <img src="img/svg/explain.svg" alt="">
             <div class="explain__about">
                 <h2>Как это работает</h2>
@@ -189,25 +189,24 @@
                 </div>
                 <div class="graphic"></div>
             </div>
-    
-    
-        <footer class="footer">
-            <h4 class="logo">Беларусская обсерватория интернета</h4>
-            <nav>
-                <ul>
-                    <li><a class="nav-info" href="">О проекте</a></li>
-                    <li><a class="nav-news" href="">Новости</a></li>
-                    <li><a class="nav-how" href="">Как это работает</a></li>
-                    <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
-                </ul>
-            </nav>
-            <div class="socials">
-                <a href="#"><div class="socials-logo"></div></a>
-                <a href="#"><div class="socials-logo"></div></a>
-                <a href="#"><div class="socials-logo"></div></a>
-            </div>
-            <p class="register-data">Учреждение «Консультационный центр по актуальным международным практикам и их имплементации в праве „Хьюман Константа“» Зарегистрировано 12.10.2016, Минским горисполкомом. УНП 192719487. Юр. адрес: ул. Карастояновой 32, оф. 9Е, Минск, Беларусь 220068</p>
-        </footer>
+            <footer class="footer">
+                <h4 class="logo">Беларусская обсерватория интернета</h4>
+                <nav>
+                    <ul>
+                        <li><a class="nav-info" href="">О проекте</a></li>
+                        <li><a class="nav-news" href="">Новости</a></li>
+                        <li><a class="nav-how" href="">Как это работает</a></li>
+                        <li><a class="nav-comp" href="">Как обойти блокировки</a></li>
+                    </ul>
+                </nav>
+                <div class="socials">
+                    <a href="#"><div class="socials-logo"></div></a>
+                    <a href="#"><div class="socials-logo"></div></a>
+                    <a href="#"><div class="socials-logo"></div></a>
+                </div>
+                <p class="register-data">Учреждение «Консультационный центр по актуальным международным практикам и их имплементации в праве „Хьюман Константа“» Зарегистрировано 12.10.2016, Минским горисполкомом. УНП 192719487. Юр. адрес: ул. Карастояновой 32, оф. 9Е, Минск, Беларусь 220068</p>
+            </footer>
     </div>
+
 </body>
 </html> 

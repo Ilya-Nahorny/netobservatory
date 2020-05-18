@@ -6,24 +6,24 @@ const slider = document.querySelector('.swiper-container');
     breakpoints: {
         480: {
           slidesPerView: 1,
-          spaceBetween: 30
+/*           spaceBetween: 30 */
         },
         // when window width is >= 640px
         640: {
           slidesPerView: 2,
-          spaceBetween: 40
+/*           spaceBetween: 40 */
         },
         960: {
             slidesPerView: 3,
-            spaceBetween:23
+/*             spaceBetween:15 */
           },
         1440:{
         slidesPerView: 3,
-        spaceBetween: 27
+/*         spaceBetween: 20 */
         },
         2560:{
           slidesPerView: 4,
-          spaceBetween: 33,
+/*           spaceBetween: 30, */
           }
       }
 /*       effect: 'coverflow',

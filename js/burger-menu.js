@@ -1,7 +1,8 @@
 $(function() {
-  var link = $('.m-menu-link');
-  var close = $('.close-menu');
-  var menu = $('.m-menu');
+  let link = $('.m-menu-link');
+  let close = $('.close-menu');
+  let menu = $('.m-menu');
+  let explainBtn = $('.mobileBtn');
   link.on('click', function(event) {
       event.preventDefault();
       menu.toggleClass('m-menu-active');
@@ -10,4 +11,9 @@ $(function() {
       event.preventDefault();
       menu.toggleClass('m-menu-active');
   });
+  explainBtn.on('click', function(event){
+    event.preventDefault();
+    menu.toggleClass('m-menu-active');
+  })
+
 });
