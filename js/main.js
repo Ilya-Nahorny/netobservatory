@@ -26,29 +26,32 @@ window.onload = function(){
             })
         })
     }
+    /* активные кнопки фильтра графиков */
+    const place = document.querySelectorAll('.place-dis');
+    const time = document.querySelectorAll('.time-dis');
+
+for (let i = 0; i < place.length; i++) {
+    place[i].addEventListener('click',(e)=>{
+        e.preventDefault();
+        place.forEach((el)=>{
+            if(el.classList.contains('place-active')) el.classList.remove('place-active');
+        })
+        place[i].classList.add('place-active');
+    })
+}
+
+for (let i = 0; i < time.length; i++) {
+    time[i].addEventListener('click',(e)=>{
+        e.preventDefault();
+        time.forEach((el)=>{
+            if(el.classList.contains('time-active')) el.classList.remove('time-active');
+        })
+        time[i].classList.add('time-active');
+    })
 }
 
 
-
-
-
-/* window.onload = function(){
-    var scrolled;
-    var timer;
-
-    this.document.getElementById("top").onclick = function(){
-        scrolled = window.pageYOffset;
-        scrollToTop();
-    }
-    function scrollToTop(){
-        if(scrolled > 0){
-            window.scrollTo(0, scrolled);
-            scrolled = scrolled - 25; //скорость прокрутки
-            timer = setTimeout(scrollToTop, 1);
+            
+            
         }
-        else{
-            clearTimeout(timer);
-            window.scrollTo(0,0);
-        }
-    }
-} */
+

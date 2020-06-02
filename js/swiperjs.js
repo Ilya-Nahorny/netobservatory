@@ -10,10 +10,16 @@ const slider = document.querySelector('.swiper-container');
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
 /*           spaceBetween: 40 */
         },
-        960: {
+        780:{
+          slidesPerView:2
+        },
+        960:{
+          slidesPerView: 2
+        },
+        1280: {
             slidesPerView: 3,
 /*             spaceBetween:15 */
           },

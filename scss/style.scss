@@ -119,10 +119,10 @@ h1,h2{
         position: sticky;
         top:0;
         z-index: 10;
-        box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
+/*         box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3); */
         height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
@@ -130,6 +130,7 @@ h1,h2{
         transition: .5s;
         .header__logo{
             width: 33.333vw;
+            /* margin-right:3vw; */
             font-size: 24px;
             line-height: 28px;
             color: #FFFFFF;
@@ -137,15 +138,18 @@ h1,h2{
             @media(max-width:520px){
                 font-size: 18px;
             }
+            @media(max-width:1410px){
+                width: 25vw;
+            }
             @media(max-width:1280px){
                 width: 15vw;
-        }
-
+            }
         }
         .m-menu-link{
             display: none;
             margin-left:15vw;
             vertical-align: middle;
+            transition: .3s;
             &:hover{
                 transform: scale(1.2);
                 background:none;
@@ -194,38 +198,11 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        li{
-            height: 44px;
-        }
-        a{  
-            display: block;
-            color:white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 15px;
-            line-height: 44px;   
-            padding: 0 0.3vw;
-            transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
 
-        }
         @media(max-width:1280px){
-            .desktop-menu{
-                width: 70%;
-            }
-        }
-        @media(max-width:960px){
             .desktop-menu{
                 display: none;
             }
@@ -290,12 +267,6 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px .3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
 
         }
 
@@ -312,14 +283,8 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 44px;   
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             border-radius: 36px;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -331,7 +296,7 @@ h1,h2{
         }
         @media(max-width:1280px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
         @media(max-width:960px){
@@ -391,7 +356,7 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px .3vw 13px .3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             cursor: pointer;
@@ -399,12 +364,7 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
+
         }
     }
     .header{
@@ -424,18 +384,18 @@ h1,h2{
             line-height: 28px;
             color: #FFFFFF;
             font-weight: 900;
-            @media(max-width:1280px){
-                margin-right:0;
-            }
             @media(max-width:520px){
                 font-size: 18px;
             }
-        }
-        @media(max-width:1280px){
-            .header__logo{
+            @media(max-width:1410px){
+                width: 25vw;
+            }
+            @media(max-width:1280px){
                 width: 15vw;
             }
         }
+
+
         .m-menu-link{
             display: none;
             margin-left:15vw;
@@ -487,7 +447,7 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
         ul{
@@ -504,14 +464,8 @@ h1,h2{
             font-size: 15px;
             line-height: 44px;   
             border-radius: 36px;
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -521,12 +475,12 @@ h1,h2{
                 cursor: pointer;
             }
         }
-        @media(max-width:1280px){
+        @media(max-width:1380px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
-        @media(max-width:960px){
+        @media(max-width:1280px){
             .desktop-menu{
                 display: none;
             }
@@ -583,19 +537,13 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px 0.3vw 13px 0.3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             transition: .3s;
             cursor: pointer;
             &:hover{
                 background-color:#62B100;
-            }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
             }
         }
     }
@@ -605,6 +553,10 @@ h1,h2{
         height: 100vh;
         background-color: #394496;
         position: relative;
+        @media(max-height:1440px){
+            min-height: calc(100vh - 100px);
+            height: calc(100vh - 100px);
+        }
         @media(max-height:640px){
             min-height: 760px;
         }
@@ -630,7 +582,7 @@ h1,h2{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        padding:2vw 5vw;
+/*                         padding:2vw 5vw; */
                     }
                 }
                 p{
@@ -688,7 +640,7 @@ h1,h2{
                 }
                 @media(max-width:960px){
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     padding:2vw;
                 }
                 div{
@@ -1137,7 +1089,7 @@ h1,h2{
                             padding: 0 7px;
                         } 
                     }
-                    input{
+                    .place-dis, .time-dis{
                         background: #F2F2F2;
                         border-radius: 26px;
                         border:none;
@@ -1145,17 +1097,19 @@ h1,h2{
                         transition: .2s;
                         outline: none;
                         cursor: pointer;
-                        &:hover{
+/*                        &:hover{
                             background: rgb(207, 212, 214);
-                        }
-                        &:focus{
-                            background:#4B58B3;
-                            color:#fff;
-                        }
-                        &:active{
-                            background:#4B58B3;
-                            color:#fff;
-                        }
+                        } */
+                    }
+                    .place-active, .time-active{
+                        background-color:#7FA74F;
+                        color:#fff;
+                        border-radius: 26px;
+                        border:none;
+                        height: 43px;
+                        transition: .2s;
+                        outline: none;
+                        cursor: pointer;
                     }
                 }
                 @media(max-width:960px){
@@ -1201,21 +1155,21 @@ h1,h2{
             }
         }
         nav{
-            width: 45vw;
+            width: 55vw;
             display: inline-block;
             margin-left: 5vw;
-            margin-right: 5vw;
+/*             margin-right: 5vw; */
             @media(max-width: 1350px){
-                width:50vw;
+                width:55vw;
             }
             @media(max-width: 1280px){
-                width:55vw;
+                width:60vw;
             }
             @media(max-width: 1140px){
                 width:65vw;
             }
             @media(max-width: 1024px){
-                width:86vw;
+                width:90vw;
                 margin-left: 5vw;
             }
         }
@@ -1225,8 +1179,9 @@ h1,h2{
             @media(max-width: 1024px){
                 justify-content: space-around;
             }
-            @media(max-width: 640px){
+            @media(max-width: 705px){
                 justify-content: space-around;
+                align-items:center;
                 flex-direction: column;
                 margin-left: 0vw;
             }
@@ -1240,7 +1195,7 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 43px;   
-            padding: 0px .5vw;
+            padding: 0px 1vw;
             transition: .3s;
             border-radius: 23.5px;
             @media(max-width: 640px){
@@ -1248,8 +1203,6 @@ h1,h2{
             }
             &:hover{
                 background-color:rgb(127, 167, 79);
-                
-                padding: 0px .5vw;
                 font-family: 'IBM Plex Sans', sans-serif;
                 outline: none;
             }
@@ -1342,7 +1295,7 @@ h1,h2{
             margin-left: 5vw;
             margin-right: 5vw;
             @media(max-width: 1024px){
-                width: 85vw;
+                width: 90vw;
                 text-align: center;
             }
         }
@@ -1355,10 +1308,10 @@ h1,h2{
         position: sticky;
         top:0;
         z-index: 10;
-        box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
+/*         box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3); */
         height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
@@ -1366,6 +1319,7 @@ h1,h2{
         transition: .5s;
         .header__logo{
             width: 33.333vw;
+            /* margin-right:3vw; */
             font-size: 24px;
             line-height: 28px;
             color: #FFFFFF;
@@ -1373,15 +1327,18 @@ h1,h2{
             @media(max-width:520px){
                 font-size: 18px;
             }
+            @media(max-width:1410px){
+                width: 25vw;
+            }
             @media(max-width:1280px){
                 width: 15vw;
-        }
-
+            }
         }
         .m-menu-link{
             display: none;
             margin-left:15vw;
             vertical-align: middle;
+            transition: .3s;
             &:hover{
                 transform: scale(1.2);
                 background:none;
@@ -1430,38 +1387,11 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        li{
-            height: 44px;
-        }
-        a{  
-            display: block;
-            color:white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 15px;
-            line-height: 44px;   
-            padding: 0 0.3vw;
-            transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
 
-        }
         @media(max-width:1280px){
-            .desktop-menu{
-                width: 70%;
-            }
-        }
-        @media(max-width:960px){
             .desktop-menu{
                 display: none;
             }
@@ -1526,12 +1456,6 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px .3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
 
         }
 
@@ -1548,14 +1472,8 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 44px;   
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             border-radius: 36px;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -1567,7 +1485,7 @@ h1,h2{
         }
         @media(max-width:1280px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
         @media(max-width:960px){
@@ -1627,7 +1545,7 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px .3vw 13px .3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             cursor: pointer;
@@ -1635,12 +1553,7 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
+
         }
     }
     .header{
@@ -1660,18 +1573,18 @@ h1,h2{
             line-height: 28px;
             color: #FFFFFF;
             font-weight: 900;
-            @media(max-width:1280px){
-                margin-right:0;
-            }
             @media(max-width:520px){
                 font-size: 18px;
             }
-        }
-        @media(max-width:1280px){
-            .header__logo{
+            @media(max-width:1410px){
+                width: 25vw;
+            }
+            @media(max-width:1280px){
                 width: 15vw;
             }
         }
+
+
         .m-menu-link{
             display: none;
             margin-left:15vw;
@@ -1723,7 +1636,7 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
         ul{
@@ -1740,14 +1653,8 @@ h1,h2{
             font-size: 15px;
             line-height: 44px;   
             border-radius: 36px;
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -1757,12 +1664,12 @@ h1,h2{
                 cursor: pointer;
             }
         }
-        @media(max-width:1280px){
+        @media(max-width:1380px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
-        @media(max-width:960px){
+        @media(max-width:1280px){
             .desktop-menu{
                 display: none;
             }
@@ -1819,19 +1726,13 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px 0.3vw 13px 0.3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             transition: .3s;
             cursor: pointer;
             &:hover{
                 background-color:#62B100;
-            }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
             }
         }
     }
@@ -2133,6 +2034,12 @@ h1,h2{
     }
     .fresh-news{
         margin:3vw 4vw;
+        @media(max-width:1024px){
+            margin:3vw 3vw;
+        }
+        @media(max-width:780px){
+            margin:1vw 1vw;
+        }
         h3{
             margin-bottom: 3vw;
             margin-left: 1vw;
@@ -2140,6 +2047,12 @@ h1,h2{
             line-height: 42px;
             font-family: 'Futura PT';
             font-weight: bold;
+            @media(max-width:1024px){
+                margin-left: 2vw;
+            }
+            @media(max-width:780px){
+                margin-left: 4vw;
+            }
         }
         .slider-container{
             .swiper-container{
@@ -2158,8 +2071,16 @@ h1,h2{
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items:center;
-                        box-shadow: 0px 1px 7px 0px rgba(0,0,0,.15);
+                        box-shadow: 0px 1px 14px 0px rgba(0,0,0,.15);
                         border-radius:4px;
+                        @media(max-width:1024px){
+                            margin-right:2vw;
+                            margin-left:2vw;
+                        }
+                        @media(max-width:780px){
+                            margin-right:4vw;
+                            margin-left:4vw;
+                        }
                         h4, p, span{
                             margin:0 1vw;
                             text-align: center;
@@ -2269,21 +2190,21 @@ h1,h2{
             }
         }
         nav{
-            width: 45vw;
+            width: 55vw;
             display: inline-block;
             margin-left: 5vw;
-            margin-right: 5vw;
+/*             margin-right: 5vw; */
             @media(max-width: 1350px){
-                width:50vw;
+                width:55vw;
             }
             @media(max-width: 1280px){
-                width:55vw;
+                width:60vw;
             }
             @media(max-width: 1140px){
                 width:65vw;
             }
             @media(max-width: 1024px){
-                width:86vw;
+                width:90vw;
                 margin-left: 5vw;
             }
         }
@@ -2293,8 +2214,9 @@ h1,h2{
             @media(max-width: 1024px){
                 justify-content: space-around;
             }
-            @media(max-width: 640px){
+            @media(max-width: 705px){
                 justify-content: space-around;
+                align-items:center;
                 flex-direction: column;
                 margin-left: 0vw;
             }
@@ -2308,7 +2230,7 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 43px;   
-            padding: 0px .5vw;
+            padding: 0px 1vw;
             transition: .3s;
             border-radius: 23.5px;
             @media(max-width: 640px){
@@ -2316,8 +2238,6 @@ h1,h2{
             }
             &:hover{
                 background-color:rgb(127, 167, 79);
-                
-                padding: 0px .5vw;
                 font-family: 'IBM Plex Sans', sans-serif;
                 outline: none;
             }
@@ -2410,7 +2330,7 @@ h1,h2{
             margin-left: 5vw;
             margin-right: 5vw;
             @media(max-width: 1024px){
-                width: 85vw;
+                width: 90vw;
                 text-align: center;
             }
         }
@@ -2425,10 +2345,10 @@ h1,h2{
         position: sticky;
         top:0;
         z-index: 10;
-        box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
+/*         box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3); */
         height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
@@ -2436,6 +2356,7 @@ h1,h2{
         transition: .5s;
         .header__logo{
             width: 33.333vw;
+            /* margin-right:3vw; */
             font-size: 24px;
             line-height: 28px;
             color: #FFFFFF;
@@ -2443,15 +2364,18 @@ h1,h2{
             @media(max-width:520px){
                 font-size: 18px;
             }
+            @media(max-width:1410px){
+                width: 25vw;
+            }
             @media(max-width:1280px){
                 width: 15vw;
-        }
-
+            }
         }
         .m-menu-link{
             display: none;
             margin-left:15vw;
             vertical-align: middle;
+            transition: .3s;
             &:hover{
                 transform: scale(1.2);
                 background:none;
@@ -2500,38 +2424,11 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        li{
-            height: 44px;
-        }
-        a{  
-            display: block;
-            color:white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 15px;
-            line-height: 44px;   
-            padding: 0 0.3vw;
-            transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
 
-        }
         @media(max-width:1280px){
-            .desktop-menu{
-                width: 70%;
-            }
-        }
-        @media(max-width:960px){
             .desktop-menu{
                 display: none;
             }
@@ -2596,12 +2493,6 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px .3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
 
         }
 
@@ -2618,14 +2509,8 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 44px;   
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             border-radius: 36px;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -2637,7 +2522,7 @@ h1,h2{
         }
         @media(max-width:1280px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
         @media(max-width:960px){
@@ -2697,7 +2582,7 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px .3vw 13px .3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             cursor: pointer;
@@ -2705,12 +2590,7 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
+
         }
     }
     .header{
@@ -2730,18 +2610,18 @@ h1,h2{
             line-height: 28px;
             color: #FFFFFF;
             font-weight: 900;
-            @media(max-width:1280px){
-                margin-right:0;
-            }
             @media(max-width:520px){
                 font-size: 18px;
             }
-        }
-        @media(max-width:1280px){
-            .header__logo{
+            @media(max-width:1410px){
+                width: 25vw;
+            }
+            @media(max-width:1280px){
                 width: 15vw;
             }
         }
+
+
         .m-menu-link{
             display: none;
             margin-left:15vw;
@@ -2793,7 +2673,7 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
         ul{
@@ -2810,14 +2690,8 @@ h1,h2{
             font-size: 15px;
             line-height: 44px;   
             border-radius: 36px;
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -2827,12 +2701,12 @@ h1,h2{
                 cursor: pointer;
             }
         }
-        @media(max-width:1280px){
+        @media(max-width:1380px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
-        @media(max-width:960px){
+        @media(max-width:1280px){
             .desktop-menu{
                 display: none;
             }
@@ -2889,19 +2763,13 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px 0.3vw 13px 0.3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             transition: .3s;
             cursor: pointer;
             &:hover{
                 background-color:#62B100;
-            }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
             }
         }
     }
@@ -3089,13 +2957,15 @@ h1,h2{
             color: #2B2B2B;
         }
         .news__wrapper{
-
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            padding:0 2vw;
+            justify-content: space-between;
+            padding:0 4.5vw;
+            @media(max-width:960px){
+                justify-content: center;
+            }
             @media(max-width:520px){
-                padding: 0 8vw;
+                padding: 0 5vw;
             }
             .card{
                 border-radius: 4px;
@@ -3105,9 +2975,16 @@ h1,h2{
                 justify-content: space-between;
                 align-items:center;
                 min-width: 300px;
-                max-width: 430px;
-                margin:2vw 1vw;
-                box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
+                max-width: 29vw;
+                margin:2vw 0.5vw;
+                box-shadow: 0px 1px 14px 0px rgba(0,0,0,.15);
+                @media(max-width:1435px){
+                    max-width: 44vw;
+                }
+
+                @media(max-width:960px){
+                    min-width: 90vw;
+                }
                 h4, p, span{
                     margin:0 1vw;
                     text-align: center;
@@ -3130,6 +3007,17 @@ h1,h2{
                     line-height: 16px;
                     color: #9F9F9F;
                     mix-blend-mode: normal;
+                    &::before{
+                        content:"";
+                        display: inline-block;
+                        position: relative;
+                        top: 6px;
+                        width: 27px;
+                        height: 21px;
+                        background-image:url(../img/svg/calendar.svg);
+                        background-repeat:no-repeat;
+                        background-position-x: left;
+                    }
                 }
             }
             .card-1>.card__img{
@@ -3289,21 +3177,21 @@ h1,h2{
             }
         }
         nav{
-            width: 45vw;
+            width: 55vw;
             display: inline-block;
             margin-left: 5vw;
-            margin-right: 5vw;
+/*             margin-right: 5vw; */
             @media(max-width: 1350px){
-                width:50vw;
+                width:55vw;
             }
             @media(max-width: 1280px){
-                width:55vw;
+                width:60vw;
             }
             @media(max-width: 1140px){
                 width:65vw;
             }
             @media(max-width: 1024px){
-                width:86vw;
+                width:90vw;
                 margin-left: 5vw;
             }
         }
@@ -3313,8 +3201,9 @@ h1,h2{
             @media(max-width: 1024px){
                 justify-content: space-around;
             }
-            @media(max-width: 640px){
+            @media(max-width: 705px){
                 justify-content: space-around;
+                align-items:center;
                 flex-direction: column;
                 margin-left: 0vw;
             }
@@ -3328,7 +3217,7 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 43px;   
-            padding: 0px .5vw;
+            padding: 0px 1vw;
             transition: .3s;
             border-radius: 23.5px;
             @media(max-width: 640px){
@@ -3336,8 +3225,6 @@ h1,h2{
             }
             &:hover{
                 background-color:rgb(127, 167, 79);
-                
-                padding: 0px .5vw;
                 font-family: 'IBM Plex Sans', sans-serif;
                 outline: none;
             }
@@ -3430,21 +3317,22 @@ h1,h2{
             margin-left: 5vw;
             margin-right: 5vw;
             @media(max-width: 1024px){
-                width: 85vw;
+                width: 90vw;
                 text-align: center;
             }
         }
     }
+
 }/* news-abserve */
 .news-observe{
     .header-sticky{
         position: sticky;
         top:0;
         z-index: 10;
-        box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3);
+/*         box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.3); */
         height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
@@ -3452,6 +3340,7 @@ h1,h2{
         transition: .5s;
         .header__logo{
             width: 33.333vw;
+            /* margin-right:3vw; */
             font-size: 24px;
             line-height: 28px;
             color: #FFFFFF;
@@ -3459,15 +3348,18 @@ h1,h2{
             @media(max-width:520px){
                 font-size: 18px;
             }
+            @media(max-width:1410px){
+                width: 25vw;
+            }
             @media(max-width:1280px){
                 width: 15vw;
-        }
-
+            }
         }
         .m-menu-link{
             display: none;
             margin-left:15vw;
             vertical-align: middle;
+            transition: .3s;
             &:hover{
                 transform: scale(1.2);
                 background:none;
@@ -3516,38 +3408,11 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        li{
-            height: 44px;
-        }
-        a{  
-            display: block;
-            color:white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 15px;
-            line-height: 44px;   
-            padding: 0 0.3vw;
-            transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
 
-        }
         @media(max-width:1280px){
-            .desktop-menu{
-                width: 70%;
-            }
-        }
-        @media(max-width:960px){
             .desktop-menu{
                 display: none;
             }
@@ -3612,12 +3477,6 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px .3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
 
         }
 
@@ -3634,14 +3493,8 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 44px;   
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             border-radius: 36px;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -3653,7 +3506,7 @@ h1,h2{
         }
         @media(max-width:1280px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
         @media(max-width:960px){
@@ -3713,7 +3566,7 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px .3vw 13px .3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             cursor: pointer;
@@ -3721,12 +3574,7 @@ h1,h2{
             &:hover{
                 background-color:#62B100;
             }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
-            }
+
         }
     }
     .header{
@@ -3746,18 +3594,18 @@ h1,h2{
             line-height: 28px;
             color: #FFFFFF;
             font-weight: 900;
-            @media(max-width:1280px){
-                margin-right:0;
-            }
             @media(max-width:520px){
                 font-size: 18px;
             }
-        }
-        @media(max-width:1280px){
-            .header__logo{
+            @media(max-width:1410px){
+                width: 25vw;
+            }
+            @media(max-width:1280px){
                 width: 15vw;
             }
         }
+
+
         .m-menu-link{
             display: none;
             margin-left:15vw;
@@ -3809,7 +3657,7 @@ h1,h2{
 /*             transform: translatex(0%); */
         }
         .desktop-menu{
-            width: 55%;
+            width: 62%;
         }
 
         ul{
@@ -3826,14 +3674,8 @@ h1,h2{
             font-size: 15px;
             line-height: 44px;   
             border-radius: 36px;
-            padding: 0 0.3vw;
+            padding: 0 1vw;
             transition: .3s;
-            @media(max-width:1280px){
-                padding: 0 0.3vw;
-            }
-            @media(max-width:960px){
-                padding: 0 2vw;
-            }
             &:hover{
                 background-color:rgb(127, 167, 79);
                 border: none;
@@ -3843,12 +3685,12 @@ h1,h2{
                 cursor: pointer;
             }
         }
-        @media(max-width:1280px){
+        @media(max-width:1380px){
             .desktop-menu{
-                width: 70%;
+                width: 62%;
             }
         }
-        @media(max-width:960px){
+        @media(max-width:1280px){
             .desktop-menu{
                 display: none;
             }
@@ -3905,19 +3747,13 @@ h1,h2{
             border: none;
             color:white;
             border-radius: 23.5px;
-            padding: 13px 0.3vw 13px 0.3vw;
+            padding: 13px 1vw 13px 1vw;
             font-family: 'IBM Plex Sans', sans-serif;
             outline: none;
             transition: .3s;
             cursor: pointer;
             &:hover{
                 background-color:#62B100;
-            }
-            @media(max-width:1280px){
-                padding: 13px 0.3vw;
-            }
-            @media(max-width: 960px){
-                padding: 13px 2vw;
             }
         }
     }
@@ -4146,6 +3982,12 @@ h1,h2{
     }
     .fresh-news{
         margin:3vw 4vw;
+        @media(max-width:1024px){
+            margin:3vw 3vw;
+        }
+        @media(max-width:780px){
+            margin:1vw 1vw;
+        }
         h3{
             margin-bottom: 3vw;
             margin-left: 1vw;
@@ -4153,6 +3995,12 @@ h1,h2{
             line-height: 42px;
             font-family: 'Futura PT';
             font-weight: bold;
+            @media(max-width:1024px){
+                margin-left: 2vw;
+            }
+            @media(max-width:780px){
+                margin-left: 4vw;
+            }
         }
         .slider-container{
             .swiper-container{
@@ -4171,8 +4019,16 @@ h1,h2{
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items:center;
-                        box-shadow: 0px 1px 7px 0px rgba(0,0,0,.15);
+                        box-shadow: 0px 1px 14px 0px rgba(0,0,0,.15);
                         border-radius:4px;
+                        @media(max-width:1024px){
+                            margin-right:2vw;
+                            margin-left:2vw;
+                        }
+                        @media(max-width:780px){
+                            margin-right:4vw;
+                            margin-left:4vw;
+                        }
                         h4, p, span{
                             margin:0 1vw;
                             text-align: center;
@@ -4381,21 +4237,21 @@ h1,h2{
             }
         }
         nav{
-            width: 45vw;
+            width: 55vw;
             display: inline-block;
             margin-left: 5vw;
-            margin-right: 5vw;
+/*             margin-right: 5vw; */
             @media(max-width: 1350px){
-                width:50vw;
+                width:55vw;
             }
             @media(max-width: 1280px){
-                width:55vw;
+                width:60vw;
             }
             @media(max-width: 1140px){
                 width:65vw;
             }
             @media(max-width: 1024px){
-                width:86vw;
+                width:90vw;
                 margin-left: 5vw;
             }
         }
@@ -4405,8 +4261,9 @@ h1,h2{
             @media(max-width: 1024px){
                 justify-content: space-around;
             }
-            @media(max-width: 640px){
+            @media(max-width: 705px){
                 justify-content: space-around;
+                align-items:center;
                 flex-direction: column;
                 margin-left: 0vw;
             }
@@ -4420,7 +4277,7 @@ h1,h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 15px;
             line-height: 43px;   
-            padding: 0px .5vw;
+            padding: 0px 1vw;
             transition: .3s;
             border-radius: 23.5px;
             @media(max-width: 640px){
@@ -4428,8 +4285,6 @@ h1,h2{
             }
             &:hover{
                 background-color:rgb(127, 167, 79);
-                
-                padding: 0px .5vw;
                 font-family: 'IBM Plex Sans', sans-serif;
                 outline: none;
             }
@@ -4522,7 +4377,7 @@ h1,h2{
             margin-left: 5vw;
             margin-right: 5vw;
             @media(max-width: 1024px){
-                width: 85vw;
+                width: 90vw;
                 text-align: center;
             }
         }
