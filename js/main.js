@@ -13,19 +13,7 @@ window.onload = function(){
         
     })
 
-    /* плавная прокрутка по якорям */
-    const anchors = document.querySelectorAll('a[href*="#"]')
 
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function(event){
-            event.preventDefault();
-            const blockID = anchor.getAttribute('href')
-            document.querySelector('' + blockID).scrollIntoView({
-                behavior:"smooth",
-                block:"start"
-            })
-        })
-    }
     /* активные кнопки фильтра графиков */
     const place = document.querySelectorAll('.place-dis');
     const time = document.querySelectorAll('.time-dis');
